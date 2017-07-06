@@ -1,0 +1,54 @@
+#content {
+    align-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+    background-color: white;
+    padding: 0;
+}
+
+#content > div {
+    display: flex;
+}
+
+#title {
+    margin-left: 50px;
+}
+
+#information {
+    margin-left: 50px;
+}
+
+#title > div {
+    font-family: 'NanumSquare';
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+#title > img {
+    padding: 5px;
+    height: 75px;
+}
+#newpostbutton>a>img{
+    padding:10px;
+    width:100px;
+}
+#page{
+    text-align: center;
+    width:500px;
+    margin:0 auto;
+}
+#view_ico{
+    width:20px;
+}
+
+#post_title{
+    font-size:15px;
+}
+form{
+    padding:10px;
+}

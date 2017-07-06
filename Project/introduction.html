@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta charset="utf-8">
+    <title>학과소개 -경기대학교 컴퓨터과학과</title>
+    <link href='css/default.css' rel='stylesheet' type='text/css'>
+    <link href='css/boardtable.css' rel='stylesheet' type='text/css'>
+    <link href='css/information.css' rel='stylesheet' type='text/css'>
+    <link href='css/content.css' rel='stylesheet' type='text/css'>
+    <style>
+
+    </style>
+</head>
+<body>
+<script src="js/default.js"></script>
+<script src="js/jquery-1.10.1.min.js"></script>
+<header>
+    <div id="headercontainer">
+        <div>
+            <a href="main.html"><img src="img/cslogo.gif" alt="" id="logo"></a>
+        </div>
+        <div id="headermenu">
+            <div><a href="introduction.html">학과소개</a></div>
+            <div><a href="member.html">구성원</a></div>
+            <div>
+                <a href="research.html">연구</a>
+            </div>
+            <div><a href="edu.html">교육</a></div>
+            <div><a href="notice.html">소식</a></div>
+            <div><a href="data.html">게시판</a></div>
+        </div>
+        <div id="member">
+            <div><img src="img/searchbutton.png" onclick="showsearch()" id="searchbutton" class="dropbtn" alt="검색"></div>
+            <div id="search">
+                <div>
+                    <ul>
+                        <li>
+                            <form id="searchdiv" action="get">
+                                <input id="searchbox" type="text" placeholder="검색">
+                                <input type="submit">
+                            </form></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="memberbutton"><img src="img/loginbutton.png" onclick="showlogin()" id="loginbutton" class="dropbtn" alt="로그인"></div>
+            <div id="login">
+                <div>
+                    <ul>
+                        <li><a href="login.html">로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="dropcontainer">
+            <div id="no-padding" class="dropdowncontents">
+                <div>
+                    <ul>
+                        <li><a href="introduction.html">인사말</a></li>
+                        <li><a href="introduction.html">연혁</a></li>
+                        <li><a href="introduction.html">위치</a></li>
+                        <li><a href="introduction.html">동아리</a></li>
+                        <li><a href="introduction.html">학업환경</a></li>
+                        <li><a href="introduction.html">>장학금 지원</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="member.html">교수진</a></li>
+                        <li><a href="member_2.html">명예교수</a></li>
+                        <li><a href="member_3.html">겸임교수</a></li>
+                        <li><a href="member_4.html">교직원</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="research.html">소프트웨어 공학</a></li>
+                        <li><a href="research_2.html">컴퓨터 그래픽</a></li>
+                        <li><a href="research_3.html">인공지능</a></li>
+                        <li><a href="research_4.html">워크플로우</a></li>
+                        <li><a href="research_5.html">모바일 인터넷 커뮤니케이션</a></li>
+                        <li><a href="research_6.html">데이터베이스</a></li>
+                        <li><a href="research_7.html">분산처리 프로그래밍</a></li>
+                        <li><a href="research_8.html">유비쿼터스 센서 네트워크</a></li>
+                        <li><a href="research_9.html">정보보안</a></li>
+                        <li><a href="research_10.html">운영체제</a></li>
+                        <li><a href="research_11.html">알고리즘</a></li>
+                        <li><a href="research_12.html">데이터마이닝</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="edu.html">입학안내</a></li>
+                        <li><a href="edu_2.html">학과과정</a></li>
+                        <li><a href="edu_3.html">장학안내</a></li>
+                        <li><a href="edu_4.html">공학인증</a></li>
+                        <li><a href="edu_5.html">졸업생 진로</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="notice.html">학과공지</a></li>
+                        <li><a href="notice_2.html">학과소식</a></li>
+                        <li><a href="notice_3.html">취업소식</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="data.html">자료실</a></li>
+                        <li><a href="data_2.html">교수, 조교게시판</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="content">
+        <div id="title">
+            <img src="img/intro.gif" alt="">
+            <div>학과소개</div>
+        </div>
+        <div id="information">경기대학교 컴퓨터과학과를 소개합니다.</div>
+        <div id="container">
+            <div id="tab">
+                <ul>
+                    <li><a href="#tap1">인사말</a></li>
+                    <li><a href="#tap2">연혁</a></li>
+                    <li><a href="#tap3">위치</a></li>
+                    <li><a href="#tap4">동아리</a></li>
+                    <li><a href="#tap5">학업환경</a></li>
+                    <li><a href="#tap6">장학금 지원</a></li>
+                </ul>
+            </div>
+            <div id="maincontent">
+                <ul>
+                    <li id="tap1">
+                        <div id="contenttitle">인사말</div>
+                        <p>컴퓨터과학과에서는 국제적 수준에 맞게 학부 교육의 체계와 내용을 내실화하고 문제 해결 능력을 갖춘 소프트웨어 엔지니어 양성을 위하여 서울어코드의 KCC2005
+                            인증기준에 맞게 프로 그램을 운영하고 있습니다. 이를 통해 우리 학과는 학부 과정의 교육 목표를 설정하고 그에 맞 게 교육과정을 운영하여 졸업생들이 우수한 능력과
+                            사회에서 기여할 수 있는 자질을 가질 수 있도록 발전시켜 나가고자 합니다.</p>
+                        <p>우리 학과에서 운영하고 있는 전문프로그램은 교육목표를 설정하고 학생들이 얼마나 잘 교육 받았는가를 평가하기 위한 학습 성과 평가 체계를 갖추고 있습니다. 또한
+                            교육목표의 달성을 위하여 학생들이 4년간의 교육과정을 통해 이수해야 할 교과목과 이수체계를 제시하고 있습니다. 그리고 수업 외에도 정기적인 지도교수 상담을 통해
+                            충실한 교 육을 받을 수 있도록 운영하고 있습니다. 학생들은 이러한 전문프로그램 운영의 취지와 체제를 잘 이해하고 4년간의 대학 교육과정을 통해 더욱 발전된 모습으로
+                            성장해 나갈 수 있도록 노력해 주시기 바랍니다.</p>
+                        <p>학과에서는 더 나은 제도와 교육 프로그램으로 학생들을 교육할 수 있도록 계속 노력하고 있습니다.</p>
+                    </li>
+                    <li id="tap2">
+                        <div id="contenttitle">연혁</div>
+                        <ul>
+
+                            <p>컴퓨터과학과가 1980년도에 문을 연지 벌써 30년이 되었습니다.
+                                그동안 2300여명의 졸업생을 배출하면서 컴퓨터 관련 전공으로는 규모가 전국에서 몇 손가락 안에 드는 학과가 되었습니다. 우리 학과는 열 한 분의 교수님들과
+                                400여 명의 학생들이 우의와 신뢰로 배움과 가르침에 매진하고 있습니다.</p>
+                            <li>
+                                <p>1979년 9월 22일 경기대학교 수원본교에 전자계산학과 40명 신설</p>
+                            </li>
+                            <li>
+                                <p>1983년 9월 8일 전자계산학과 30명 증원(총 70명)</p>
+                            </li>
+                            <li>
+                                <p>1991년 10월 22일 경기대학교 수원본교에 전자계산학과 야간 신설</p>
+                            </li>
+                            <li>
+                                <p>1992년 7월 28일 대학원 석사과정에 전자계산학과 신설</p>
+                            </li>
+                            <li>
+                                <p>1995년 10월 18일 대학원 박사과정에 전자계산학과 신설</p>
+                            </li>
+                            <li>
+                                <p>1997년 11월 5일 대학원 박사과정에 전자계산학과 신설</p>
+                            </li>
+                            <li>
+                                <p>1995년 10월 18일 학부제 시행에 따라 정보과학부로 명칭 변경. 세부전공으로 전자계산학과(주·야) 개설.</p>
+                            </li>
+                            <li>
+                                <p>2003년 3월 수원본교 이공총괄학부 소속 정보과학부 전자계산전공 , 전임교원 11명에 주간정원 70명, 야간정원 50명 설치, 전자계산학 석사,
+                                    박사과정 설치.</p>
+                            </li>
+                            <li>
+                                <p>2003년 5월 전자계산학과에서 컴퓨터과학과로 전공 명칭 변경</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="tap3">
+                        <div id="contenttitle">위치</div>
+                        <p>위치 : 경기대학교 수원캠퍼스 육영관(8강의동) 8505호</p>
+                        <p><a href="http://www.kyonggi.ac.kr/webService.kgu?menuCode=K00M000202">>>수원캠퍼스 오는 길 알아보기</a>
+                        </p>
+                    </li>
+                    <li id="tap4">
+                        <div id="contenttitle">동아리</div>
+                        <ul>
+                            <li>
+                                <div><img src="img/ssflogo_3.png" alt="" id="clublogo">SSF</div>
+                                <p>존나 개좋은 동아리셈 ㅋㅋㅋㅋ ㄹㅇ루~~</p>
+                            </li>
+                            <li>귀뚜라미
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex nam neque
+                                    praesentium? A aut deleniti dicta fugit harum illum molestias non officiis omnis,
+                                    pariatur, quibusdam, quis ratione veritatis voluptate.</p>
+                            </li>
+                            <li>나는 전설이다
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex nam neque
+                                    praesentium? A aut deleniti dicta fugit harum illum molestias non officiis omnis,
+                                    pariatur, quibusdam, quis ratione veritatis voluptate.</p>
+                            </li>
+                            <li>엑센트
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex nam neque
+                                    praesentium? A aut deleniti dicta fugit harum illum molestias non officiis omnis,
+                                    pariatur, quibusdam, quis ratione veritatis voluptate.</p>
+                            </li>
+                            <li>한솔
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex nam neque
+                                    praesentium? A aut deleniti dicta fugit harum illum molestias non officiis omnis,
+                                    pariatur, quibusdam, quis ratione veritatis voluptate.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="tap5">
+                        <div id="contenttitle">학업환경</div>
+                        <p>컴퓨터과학과는 최고수준의 개인용 컴퓨터와 프레젠테이션 환경을 갖춘 실습실을 갖추고 있으며, 회의실과 도서실을 학생들에게 제공함으로써 활발한 커뮤니케이션을 통한 창의적
+                            인재를 양성하는데 힘을 쏟고 있습니다.</p>
+                        <ul>
+                            <li>학과전용 실습실 1 : 8001호
+                                <ul>
+                                    <li><p>PC : 48대</p></li>
+                                </ul>
+                            </li>
+                            <li>학과전용 실습실 2 : 8308호
+                                <ul>
+                                    <li><p>PC : 40대</p></li>
+                                </ul>
+                            </li>
+                            <li>학과전용 실습실 3 : 8504호
+                                <ul>
+                                    <li><p>PC : 32대</p></li>
+                                    <li><p>프린트 2대 사용 가능</p></li>
+                                    <li><p>수업시간 이외에 사용 가능 (24시간 개방)</p></li>
+                                </ul>
+                            </li>
+                            <li>각종 실습 장비</li>
+                        </ul>
+                        <p>교육과 연구를 위한 학과의 컴퓨팅 환경으로는 학과 공용으로 다수의 컴퓨터 서버, 스토리지 서버, 클러스터드 리눅스 서버를 갖추고 있으며, 연구실 별로도 각종 서버급
+                            컴퓨터, 워크스테이션, 최신의 퍼스널 컴퓨터 및 여러 종류의 주변 기기를 보유하고 있습니다.
+                            모든 컴퓨터는 초고속 통신망으로 인터넷에 연결되어 있으며 전산학동 전체에 무선랜이 설치되어 연구실과 강의실 어느 곳에서도 무선으로 인터넷 접속이 가능하도록
+                            되어있습니다.</p>
+                    <li id="tap6">
+                        <div id="contenttitle">장학금 지원</div>
+                        <p>이건 교육 탭으로 옮겼으면 함.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere officia
+                            quibusdam totam?
+                            Cumque eaque harum quos tempore. Animi asperiores ipsum, nam pariatur perferendis recusandae
+                            suscipit vel veniam? Consequuntur eaque, sapiente.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <p> (16227) 경기도 수원시 영통구 광교산로 154-42 육영관 8505호 경기대학교 이공대학 컴퓨터과학과</p>
+        <p> TEL : <strong>031) 249-9670</strong></p>
+        <p> Copyright © 2017 KYONGGI UNIVERSITY DEPARTMENT OF COMPUTER SCIENCE. ALL RIGHTS RESERVED.</p>
+    </div>
+    <div id="footerlogocontainer"><img src="img/footerlogo.png" alt=""></div>
+</footer>
+</body>
+</html>

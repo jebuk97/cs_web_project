@@ -1,0 +1,147 @@
+div {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    padding: 0;
+}
+
+#container {
+    /*width: 1000px;*/
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#tab {
+    min-width: 150px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+#tab > ul > li {
+    font-size: 13px;
+    padding: 10px;
+}
+
+#tab > ul > li:hover {
+    font-weight: bold;
+    background-color: #66CCCC;
+    text-decoration: underline;
+}
+
+#maincontent {
+    line-height: 1.8em;
+    font-family: NanumSquare;
+    padding: 10px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+}
+
+#maincontent > ul {
+    margin-left: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    list-style: square url(../img/list.gif);
+}
+
+#maincontent > ul > li > ul {
+    list-style: square url(../img/li.gif);
+}
+
+#maincontent > ul > li > ul > li {
+    color: #455A64;
+    font-weight: bold;
+}
+
+#contenttitle {
+    color: #455A64;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#maincontent > ul {
+    width: 860px;
+}
+
+#maincontent > ul > li {
+    padding-left: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+ul > li:nth-child(1) {
+    border: none;
+}
+
+li {
+    margin: 0;
+    border-top: 1px solid gainsboro;
+    padding: 5px;
+
+}
+
+#subtitle {
+    font-size: 20px;
+}
+
+a {
+    color: black;
+}
+
+#clublogo {
+    width: 40px;
+}
+
+#undertitle {
+    display: flex;
+    flex-direction: row;
+    width: 20px;
+}
+
+#tap5 > ul > li > ul > li {
+    border: none;
+}
+
+p {
+    font-size: 15px;
+}
+
+dl {
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom:0;
+    margin-top:0;
+    width:400px;
+}
+
+dt {
+    width:28px;
+    height:28px;
+    float: left;
+}
+
+dt > img {
+    padding:4px;
+    width: 20px;
+}
+
+dd {
+    margin-left: 10px;
+}
+
+ul > img {
+    width:80px;
+}
+#tap1>ul>div{
+    width:500px;
+    display: inline;
+}

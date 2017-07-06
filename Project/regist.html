@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta charset="utf-8">
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css'
+          rel='stylesheet' type='text/css'>
+    <link href='css/default.css' rel='stylesheet' type='text/css'>
+    <link href='css/content.css' rel='stylesheet' type='text/css'>
+    <title>SSF 회원가입</title>
+    <style>
+        html {
+            height: 1200px;
+        }
+
+        #content {
+            width: 750px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        tr:nth-child(4) {
+            font-size: 15px;
+            color: #90A4AE;
+        }
+
+        #content > img {
+            margin-left: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+
+</script>
+<header>
+    <div>
+        <a href="main.html"><img src="img/ssflogo_3.png" alt="" style="width: 200px;"></a>
+    </div>
+    <div id="menu">
+        <div>공지사항</div>
+        <div>스터디</div>
+        <div id="board">
+            게시판
+            <div id="menu3down">
+                <div>자유게시판</div>
+                <div>질문게시판</div>
+            </div>
+        </div>
+        <div><a href="fight.html">투기장</a></div>
+        <div>자료실</div>
+    </div>
+    <div id="member">
+        <div><a href="login.html">로그인</a></div>
+        <div><a href="regist.html">회원가입</a></div>
+    </div>
+</header>
+<main>
+    <div id="content">
+        <div id="title"><img src="img/regist.png" alt="">
+            <div>회원가입</div>
+        </div>
+        <div>SSF에 오신 것을 환영합니다.</div>
+        <form action="#">
+        <div>
+            <table>
+                <tbody>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="user_name" required></td>
+                </tr>
+                <tr>
+                    <td>학번</td>
+                    <td><input type="text" name="user_id" required></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="user_pw" required></td>
+                </tr>
+                <tr>
+
+                    <td id="pw_info" colspan="2">비밀번호는 6자리 이상이어야 하며 영문과 숫자를 반드시 포함해야 합니다.</td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td><input type="password" name="user_pw2" required></td>
+                </tr>
+                <tr>
+                    <td>프로그래밍에 대해 어느 정도 아나요?</td>
+                    <td><select name="grade">
+                        <option value="good">잘 안다</option>
+                        <option value="soso">무엇인지는 안다</option>
+                        <option value="bad">모른다</option>
+                    </select><br>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <input type="submit" value="가입">
+        </div>
+        </form>
+        <img src="img/submit.png" alt="">
+    </div>
+</main>
+</body>
+</html>
